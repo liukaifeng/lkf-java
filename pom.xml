@@ -12,6 +12,7 @@
         <module>collection</module>
         <module>parttern</module>
         <module>algorithm</module>
+        <module>concurrent</module>
     </modules>
 
 </project>
