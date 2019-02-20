@@ -1,5 +1,8 @@
 package com.lkf.parttern.complex;
 
+import java.util.Iterator;
+import java.util.ServiceLoader;
+
 /**
  * todo 一句话描述该类的用途
  *
@@ -14,5 +17,18 @@ public class ClientDemo {
         context = new StragetyContext(type);
         String result = context.getResult(params);
         System.out.println(result);
+
+//        try {
+//            Class<?> clazz= Class.forName(IStragety.class.getName());
+//            if(clazz.isInterface())
+//            {
+//
+//            }
+//            System.out.println();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
+
+
     }
 }
