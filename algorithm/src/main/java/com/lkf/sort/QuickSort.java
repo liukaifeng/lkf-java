@@ -19,25 +19,25 @@ public class QuickSort {
      * 快速排序
      *
      * @param arr   待排序数组
-     * @param first 指向数组第一个元素
-     * @param end   指向数组最后一个元素
+     * @param first 指向数组第一个元素的下标
+     * @param end   指向数组最后一个元素的下标
      */
     public static void quickSort(int[] arr, int first, int end) {
         int i = first;
         int j = end;
 
-        //中间点
+        //中间数值
         int pivot = arr[(first + end) / 2];
 
         //左右两端进行扫描，只要两端还没有交替，就一直扫描
         while (i <= j) {
 
-            //寻找直到比中间点大的数
+            //寻找直到比中间数值大的数
             while (pivot > arr[i]) {
                 i++;
             }
 
-            //寻找直到比中间点小的数
+            //寻找直到比中间数值小的数
             while (pivot < arr[j]) {
                 j--;
             }
@@ -51,7 +51,7 @@ public class QuickSort {
                 j--;
             }
         }
-        //上面一个while保证了第一趟排序中间点的左边比中间点小，中间点的右边比中间点大了。
+        //上面while保证了第一趟排序中间数的左边比中间数小，中间数的右边比中间数大
 
 
         //“左边”再做排序，直到左边剩下一个数(递归出口)

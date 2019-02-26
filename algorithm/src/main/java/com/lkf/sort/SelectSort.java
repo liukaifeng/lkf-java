@@ -5,34 +5,63 @@ import java.util.Arrays;
 
 /**
  * 选择排序
+ * 实现思路：
+ * 首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置
+ * <p>
+ * 再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。
+ * <p>
+ * 重复第二步，直到所有元素均排序完毕。
  *
  * @author kaifeng
  */
 public class SelectSort {
-    public static void main(String[] args) {
+    public static void main( String[] args ) {
         //待排序数组
         int[] arrays = {1, 8, 9, 3, 5, 6};
-        int pos = 0;
-        //外层循环控制需要排序的趟数
-        for (int i = 0; i < arrays.length - 1; i++) {
 
-            int temp = 0;
-            //新的趟数重新赋值为0
-            pos = 0;
+        System.out.println("结果：" + Arrays.toString(sort1(arrays)));
+    }
 
-            //内层循环控制遍历数组的个数并得到最大数的下标
-            for (int j = 0; j < arrays.length - i; j++) {
-                if (arrays[j] > arrays[pos]) {
-                    pos = j;
+    public static int[] sort( int[] arr ) {
+        // 总共要经过 N-1 轮比较
+        for (int i = 0; i < arr.length - 1; i++) {
+            System.out.println("第 " + (i + 1) + " 趟 min ：" + arr[i] + "  " + Arrays.toString(arr));
+            int min = i;
+            // 每轮需要比较的次数 N-i
+            for (int j = i + 1; j < arr.length; j++) {
+                System.out.println("arr[j] " + arr[j] + " arr[min] ：" + arr[min]);
+
+                if (arr[j] < arr[min]) {
+                    // 记录目前能找到的最小值元素的下标
+                    min = j;
                 }
             }
-            //交换
-            temp = arrays[pos];
-            arrays[pos] = arrays[arrays.length - 1 - i];
-            arrays[arrays.length - 1 - i] = temp;
+            // 将找到的最小值和i位置所在的值进行交换
+            if (i != min) {
+                int tmp = arr[i];
+                arr[i] = arr[min];
+                arr[min] = tmp;
+            }
+            System.out.println("第 " + (i + 1) + " 趟 结束========= ：");
 
         }
+        return arr;
+    }
 
-        System.out.println("选择排序结果：" + Arrays.toString(arrays));
+    public static int[] sort1( int[] arr ) {
+        for (int i = 0; i < arr.length; i++) {
+            int min = i;
+            for (int j = i+1; j < arr.length ; j++) {
+                if (arr[j] < arr[min]) {
+                    min = j;
+                }
+            }
+            if (i != min) {
+                int temp = arr[i];
+                arr[i] = arr[min];
+                arr[min] = temp;
+            }
+        }
+        return arr;
     }
 }
