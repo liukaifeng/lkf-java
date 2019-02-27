@@ -1,6 +1,6 @@
 package com.lkf.leetcode
 
-object TwoSum001 {
+object TwoSum1 {
   def main(args: Array[String]): Unit = {
     println(twoSum().mkString)
   }
