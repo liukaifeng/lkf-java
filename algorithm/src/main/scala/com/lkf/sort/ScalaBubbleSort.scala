@@ -16,7 +16,7 @@ object ScalaBubbleSort {
           arrs.update(j + 1, temp)
           noExchange=false
         }
-        
+
       }
     }
     arrs
