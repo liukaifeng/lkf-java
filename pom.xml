@@ -13,6 +13,7 @@
         <module>parttern</module>
         <module>algorithm</module>
         <module>concurrent</module>
+        <module>datastructure</module>
     </modules>
 
 </project>
