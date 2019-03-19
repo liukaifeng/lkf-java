@@ -3,7 +3,7 @@ package com.lkf.stack;
 import java.util.Stack;
 
 /**
- * todo 一句话描述该类的用途
+ * 栈实现表达式计算
  *
  * @author 刘凯峰
  * @date 2019-03-18 16-37
