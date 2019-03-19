@@ -12,7 +12,7 @@ import java.util.Stack;
  * @author kaifeng
  * @date 2019/3/5
  */
-public class ReverseKQueue {
+public class QueueReverseK {
     public static void reverseKQueue(Queue queue, int k) {
         Stack stack = new Stack();
         Queue newQueue = new LinkedList();

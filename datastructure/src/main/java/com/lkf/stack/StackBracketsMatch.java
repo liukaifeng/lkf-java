@@ -8,7 +8,7 @@ import java.util.Stack;
  * @author kaifeng
  * @date 2019/3/5
  */
-public class BracketsMatchByStack {
+public class StackBracketsMatch {
     public static void main(String[] args) {
         int flag = 1, l;
         String s = "{([])}";
