@@ -5,7 +5,7 @@ import java.util.Stack;
 /**
  * 栈实现表达式计算
  *
- * @author 刘凯峰
+ * @author lkf
  * @date 2019-03-18 16-37
  */
 public class StackExpression {
@@ -15,7 +15,7 @@ public class StackExpression {
      *
      * @param expression 表达式
      * @return int
-     * @author 刘凯峰
+     * @author lkf
      * @date 2019/3/18 17:21
      */
     public static int parserExpression( String expression ) {
@@ -91,6 +91,5 @@ public class StackExpression {
 
     public static void main( String[] args ) {
         System.out.println("3+(8-3)*6/3 = " + parserExpression("3+(8-3)*6/3"));
-
     }
 }
