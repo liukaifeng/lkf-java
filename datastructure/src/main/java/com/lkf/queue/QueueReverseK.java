@@ -5,12 +5,11 @@ import java.util.Queue;
 import java.util.Stack;
 
 /**
- * 面试题：反转队列前K个元素
+ * 反转队列前K个元素
  * <p>
- * 直接把前k个元素压栈，放入新队列中，追加剩余的队列元素
+ * 把前k个元素压栈，然后放入新队列中，最后将剩下的元素都添加到新队列中
  *
  * @author kaifeng
- * @date 2019/3/5
  */
 public class QueueReverseK {
     public static void reverseKQueue(Queue queue, int k) {
@@ -32,6 +31,4 @@ public class QueueReverseK {
             System.out.println(newQueue.poll());
         }
     }
-
-
 }

@@ -8,26 +8,15 @@ import java.util.Set;
 import java.util.Stack;
 
 /**
- * The nested brackets problem is a problem that determines if a sequence of
- * brackets are properly nested. A sequence of brackets s is considered properly
- * nested if any of the following conditions are true: - s is empty - s has the
- * form (U) or [U] or {U} where U is a properly nested string - s has the form
- * VW where V and W are properly nested strings For example, the string
- * "()()[()]" is properly nested but "[(()]" is not. The function called
- * is_balanced takes as input a string S which is a sequence of brackets and
- * returns true if S is nested and false otherwise.
- *
- * @author akshay sharma
- * @author <a href="https://github.com/khalil2535">khalil2535<a>
- * @date: 2017-10-17
+ * @author lkf
  */
 class StackBalancedBrackets {
 
     /**
-     * @param s
-     * @return
+     * @param s 字符串表达式
+     * @return 如果匹配返回，true
      */
-    static boolean isBalanced1( String s ) {
+    private static boolean isBalanced1(String s) {
         Stack<Character> bracketsStack = new Stack<>();
         char[] text = s.toCharArray();
         for (char x : text) {
@@ -92,10 +81,10 @@ class StackBalancedBrackets {
      *
      * @param str 字符串
      * @return boolean
-     * @author 刘凯峰
+     * @author lkf
      * @date 2019/3/20 10:00
      */
-    private static boolean isBalanced2( String str ) {
+    private static boolean isBalanced2(String str) {
         Stack<Character> stack = new Stack<>();
         char[] chars = str.toCharArray();
         for (char c : chars) {
@@ -109,12 +98,12 @@ class StackBalancedBrackets {
         return stack.isEmpty();
     }
 
-    public static void main( String args[] ) {
+    public static void main(String args[]) {
         String s = "({[9*9]})";
         if (isBalanced2(s)) {
-            System.out.println(s + " is balanced");
+            System.out.println(s + " 表达式括号平衡");
         } else {
-            System.out.println(s + " ain't balanced");
+            System.out.println(s + " 表达式括号不平衡");
         }
     }
 }

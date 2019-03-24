@@ -25,7 +25,8 @@ public class StackSymbolMatch {
                 if (stack.isEmpty()) {
                     flag = 1;
                 } else {
-                    if (('}' == arr[i] && stack.pop() == '{') || ')' == arr[i] && stack.pop() == '('
+                    if (('}' == arr[i] && stack.pop() == '{')
+                            || ')' == arr[i] && stack.pop() == '('
                             || ']' == arr[i] && stack.pop() == '[') {
                         stack.pop();
                     }

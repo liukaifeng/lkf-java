@@ -1,5 +1,6 @@
 package com.lkf.linkedlist;
 
+
 import com.alibaba.fastjson.JSONObject;
 
 /**
@@ -35,7 +36,7 @@ public class LinkedListReversal {
      * @date 2019/3/6 17:02
      */
     public static LinkedSingleListNode recursionReverse( LinkedSingleListNode head ) {
-        System.out.println("head："+JSONObject.toJSONString(head));
+        System.out.println("head："+ JSONObject.toJSONString(head));
 
         //如果是空链表或者尾结点
         if (head == null || head.getNext() == null) {

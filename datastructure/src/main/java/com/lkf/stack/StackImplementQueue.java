@@ -3,13 +3,13 @@ package com.lkf.stack;
 import java.util.Stack;
 
 /**
- * todo 一句话描述该类的用途
+ * 使用两个栈实现队列
  *
  * @author 刘凯峰
  * @date 2019-03-20 10-22
  */
 public class StackImplementQueue {
-    public static void main( String args[] ) {
+    public static void main(String args[]) {
         StackForQueue myQueue = new StackForQueue();
         myQueue.insert(1);
         System.out.println(myQueue.peekBack()); //Will print 1
@@ -88,7 +88,7 @@ class StackForQueue {
      *
      * @param x 插入的元素
      */
-    public void insert( Object x ) {
+    public void insert(Object x) {
         // Insert element into inStack
         this.inStack.push(x);
     }
