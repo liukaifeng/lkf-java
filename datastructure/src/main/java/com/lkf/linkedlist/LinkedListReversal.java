@@ -4,7 +4,7 @@ package com.lkf.linkedlist;
 import com.alibaba.fastjson.JSONObject;
 
 /**
- * todo 一句话描述该类的用途
+ * 单链表反转
  *
  * @author 刘凯峰
  * @date 2019-03-06 16-32

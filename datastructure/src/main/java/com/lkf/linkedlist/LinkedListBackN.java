@@ -1,7 +1,7 @@
 package com.lkf.linkedlist;
 
 /**
- * todo 一句话描述该类的用途
+ * 返回链表倒数第n个元素
  *
  * @author 刘凯峰
  * @date 2019-03-06 17-59
