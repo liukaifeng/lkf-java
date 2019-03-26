@@ -7,9 +7,13 @@ package com.lkf.linkedlist;
  * @date 2019-03-06 17-28
  */
 public class LinkedSingleListNode {
-    //数据域
+    /**
+     * 当前节点数据
+     */
     private int data;
-    //指针域
+    /**
+     * 指向下一个节点
+     */
     private LinkedSingleListNode next;
 
 

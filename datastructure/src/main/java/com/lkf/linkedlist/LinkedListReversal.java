@@ -11,8 +11,6 @@ import com.alibaba.fastjson.JSONObject;
  */
 public class LinkedListReversal {
 
-   
-
 
     /**
      * 递归实现单链表反转
@@ -30,28 +28,28 @@ public class LinkedListReversal {
      * head.next = null 即把3结点指向4结点的指针断掉。
      * 返回新链表的头结点newHead
      *
-     * @param head 节点
+     * @param node 节点
      * @return com.lkf.cdh.ReversalLinkList.SingleLinkedListNode
      * @author 刘凯峰
      * @date 2019/3/6 17:02
      */
-    public static LinkedSingleListNode recursionReverse( LinkedSingleListNode head ) {
-        System.out.println("head："+ JSONObject.toJSONString(head));
+    public static LinkedSingleListNode recursionReverse( LinkedSingleListNode node ) {
+        System.out.println("head：" + JSONObject.toJSONString(node));
 
         //如果是空链表或者尾结点
-        if (head == null || head.getNext() == null) {
-            return head;
+        if (node == null || node.getNext() == null) {
+            return node;
         }
 
         //先反转后续结点
-        LinkedSingleListNode newNode = recursionReverse(head.getNext());
-        System.out.println("newNode："+JSONObject.toJSONString(newNode));
+        LinkedSingleListNode newNode = recursionReverse(node.getNext());
+        System.out.println("newNode：" + JSONObject.toJSONString(newNode));
 
         //当前结点指针指向前一结点
-        head.getNext().setNext(head);
+        node.getNext().setNext(node);
 
         //令前一结点的指针域为null
-        head.setNext(null);
+        node.setNext(null);
         return newNode;
     }
 
