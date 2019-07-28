@@ -61,5 +61,7 @@ public class CollectorDemo {
         Map<Boolean, Map<String, List<Apple>>> mapPartion2 = appleList.stream().collect(Collectors.partitioningBy(a -> a.getPrice() > 0, Collectors.groupingBy(Apple::getProductionPlace)));
         System.out.println(mapPartion2);
 
+
+
     }
 }
