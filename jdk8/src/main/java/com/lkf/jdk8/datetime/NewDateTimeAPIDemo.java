@@ -9,13 +9,20 @@ import java.time.ZoneId;
  */
 public class NewDateTimeAPIDemo {
     public static void main(String[] args) {
-//        localDateDemo();
+//        LocalDateDemo.createLocalDate();
+//        LocalDateDemo.getYearMonthDay();
+//        LocalDateDemo.addOrSubstractUsingLocalDate();
+//        LocalDateDemo.compareLocalDate();
+//        LocalDateDemo.getDaysFromMonthAndYear();
+//        LocalDateDemo.checkIfYearIsLeapYear();
+        LocalDateDemo.convertStringToLocalDate();
+
 //        LocalTimeDemo.createLocalTime();
 //        LocalTimeDemo.getHourMinuteSecondfromLocalTime();
 //        LocalTimeDemo.addorSubtractHoursMinutesAndSecondstoLocalTime();
 //        LocalTimeDemo.compareLocalTimeObjects();
 //        LocalTimeDemo.convertStringToLocalTime();
-        LocalTimeDemo.convertLocalTimeToString();
+//        LocalTimeDemo.convertLocalTimeToString();
     }
 
     public static void localDateDemo() {
