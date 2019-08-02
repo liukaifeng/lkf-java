@@ -140,7 +140,10 @@ public class LocalDateDemo {
         System.out.println("12-01-2017 格式化：" + localDate4);
     }
 
-    private static void convertLocalDatetoString() {
+    /**
+     * LocalDate 转换为指定日期格式字符串
+     */
+    public static void convertLocalDatetoString() {
         // ISO Date
         LocalDate localDate = LocalDate.now();
         DateTimeFormatter dateFormatter = DateTimeFormatter.ISO_LOCAL_DATE;

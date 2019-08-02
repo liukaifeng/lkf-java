@@ -9,34 +9,36 @@ import java.time.ZoneId;
  */
 public class NewDateTimeAPIDemo {
     public static void main(String[] args) {
+//        ==========LocalDate============
 //        LocalDateDemo.createLocalDate();
 //        LocalDateDemo.getYearMonthDay();
 //        LocalDateDemo.addOrSubstractUsingLocalDate();
 //        LocalDateDemo.compareLocalDate();
 //        LocalDateDemo.getDaysFromMonthAndYear();
 //        LocalDateDemo.checkIfYearIsLeapYear();
-        LocalDateDemo.convertStringToLocalDate();
-
+//        LocalDateDemo.convertStringToLocalDate();
+//        LocalDateDemo.convertLocalDatetoString();
+//        ==========LocalTime============
 //        LocalTimeDemo.createLocalTime();
 //        LocalTimeDemo.getHourMinuteSecondfromLocalTime();
 //        LocalTimeDemo.addorSubtractHoursMinutesAndSecondstoLocalTime();
 //        LocalTimeDemo.compareLocalTimeObjects();
 //        LocalTimeDemo.convertStringToLocalTime();
 //        LocalTimeDemo.convertLocalTimeToString();
-    }
+//        ==========LocalDateTime============
+//        LocalDateTimeDemo.createLocalDateTime();
+//        LocalDateTimeDemo.getYearMonthDayFromLocalDateTime();
+//        LocalDateTimeDemo.getHourMinuteSecondfromLocalDateTime();
+//        LocalDateTimeDemo.addOrSubstractUsingLocalDateTime();
+//        LocalDateTimeDemo.compareLocalDateTimeObjects();
+//        LocalDateTimeDemo.convertLocalDateTimeToLocalDate();
+//        LocalDateTimeDemo.convertLocalDateTimeToLocalTime();
+//        ==========Instant============
+//        InstantDemo.instantMethod();
+//        ==========Instant============
+//        DurationDemo.durationMethod();
+PeriodDemo.periodMethod();
 
-    public static void localDateDemo() {
-        //当前日期
-        LocalDate today = LocalDate.now();
-        System.out.println("当前日期=" + today);
-
-        //通过输入参数创建 LocalDate 对象
-        LocalDate firstDay_201907 = LocalDate.of(2019, Month.JULY, 1);
-        System.out.println("通过输入参数创建 LocalDate 对象=" + firstDay_201907);
-
-        //上海日期
-        LocalDate shanghaiDate = LocalDate.now(ZoneId.of("Asia/Shanghai"));
-        System.out.println("上海日期=" + shanghaiDate);
     }
 
 
