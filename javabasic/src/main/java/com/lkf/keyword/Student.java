@@ -1,5 +1,9 @@
 package com.lkf.keyword;
 
+import lombok.Data;
+import lombok.ToString;
+
+@Data
 public class Student extends Person {
 
     /**
@@ -10,32 +14,27 @@ public class Student extends Person {
      * 联系地址
      */
     private String address;
+    /**
+     * 名字
+     */
+    private String name;
+    public  Student(){}
 
-    public Student(String name, Integer sex, Integer age, String mobile, String address) {
-        //调用父类三个参数的构造函数
-        super(name, sex, age);
+    public Student(String parentName,String name, Integer sex, Integer age, String mobile, String address) {
+        //引用父类实例变量
+        super.setName(parentName);
+        super.setSex(sex);
+        super.setAge(age);
+        this.name=name;
         this.mobile = mobile;
         this.address = address;
     }
 
-    public Student(String name, Integer sex){
-        //调用父类两个参数的构造函数
-        super(name,sex);
+    @Override
+    public void whoAmI(){
+        super.whoAmI();
+        System.out.println("我是子类Student");
     }
 
-    public String getMobile() {
-        return mobile;
-    }
 
-    public void setMobile(String mobile) {
-        this.mobile = mobile;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
 }
