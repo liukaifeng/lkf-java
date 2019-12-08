@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table class="alt">
+    <tbody><tr ><th style="width: 30%">方法</th><th>描述</th></tr>
+    <tr><td>int getColumnCount() throws SQLException</td><td>返回 ResultSet 对象列的数量</td></tr>
+    <tr><td>String getColumnName(int column) throws SQLException</td><td>根据指定的索引获取列名</td></tr>
+    <tr><td>int getColumnType(int column) throws SQLException</td><td>根据指定索引检索指定列的SQL类型</td></tr>
+    <tr><td>String getTableName(int column) throws SQLException</td><td>根据列索引获取表名</td></tr>
+    <tr><td>String getSchemaName(int column)</td><td>获取指定列的表的结构</td></tr>
+    <tr><td>int getScale(int column) throws SQLException</td><td>获取指定列的小数点右边的位数。 对于不适用小数位数的数据类型，返回0。</td></tr>
+    <tr><td>int getPrecision(int column) throws SQLException</td><td>获取指定列的指定列大小。 对于数字数据，这是最大精度。 对于字符数据，这是字符长度。 对于日期时间数据类型，这是字符串表示形式的字符长度（假设小数秒部分的最大允许精度）。 对于二进制数据，这是字节长度。 对于ROWID数据类型，这是字节长度。 对于列大小不适用的数据类型，返回0。</td></tr>
+    </tbody>
+</table>
+</body>
+</html>
